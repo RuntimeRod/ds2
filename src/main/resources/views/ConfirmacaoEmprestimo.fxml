@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" spacing="20.0" styleClass="popup-card" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ConfirmacaoEmprestimoController">
+    <children>
+        <Label styleClass="success-icon" text="✓">
+            <font>
+                <Font size="48.0" />
+            </font>
+        </Label>
+        <Label styleClass="header-label" text="Empréstimo Aprovado!">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label styleClass="info-label" text="Seu empréstimo foi aprovado e o valor será" textAlignment="CENTER" wrapText="true" />
+        <Label fx:id="lblValorAprovado" styleClass="highlight-label" text="R$ 5.000,00" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label styleClass="info-label" text="depositado em sua conta em até 24 horas." textAlignment="CENTER" wrapText="true" />
+        <Button fx:id="btnVoltar" mnemonicParsing="false" onAction="#voltarTelaInicial" prefHeight="40.0" prefWidth="150.0" styleClass="main-button" text="Voltar ao Início" />
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>
